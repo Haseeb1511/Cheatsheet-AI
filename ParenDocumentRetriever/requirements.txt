@@ -1,0 +1,9 @@
+faiss-cpu
+langchain-community
+langchain-google-genai
+langchain
+pypdf
+langchain_groq
+protobuf==5.29.4
+proto-plus==1.22.3
+chromadb
