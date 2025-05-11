@@ -1,0 +1,7 @@
+pinecone-client
+langchain-community
+langchain_pinecone
+langchain-google-genai
+pypdf
+python-dotenv
+"pymongo[srv]==3.11"
