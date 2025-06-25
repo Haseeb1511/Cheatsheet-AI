@@ -1,0 +1,5 @@
+# Build Docker image
+docker build -t <NameOfImage> .
+
+# Run Docker container
+docker run -p 5000:5000 <NameOfContainer>
