@@ -1,0 +1,7 @@
+langchain
+langgraph
+ipykernel
+langchain-mcp-adapters
+mcp
+langchain-openai
+dotenv

@@ -1,0 +1,21 @@
+langchain
+langgraph
+langsmith
+ipykernel
+langchain-openai
+dotenv
+langchain-tavily
+
+
+
+
+# ✅ What is uv?
+# uv is a fast Python package manager and build tool by Astral, meant to be a drop-in replacement for pip + venv + pip-tools.
+
+# pip install pipx
+# pipx ensurepath
+# pipx install uv 
+# uv init
+# uv venv
+# ./venv/scripts/activate
+# uv add -r requirements.txt
