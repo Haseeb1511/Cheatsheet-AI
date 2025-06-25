@@ -1,0 +1,6 @@
+uv init
+uv venv
+.venv/scripts/activate
+
+uv add -r requirements.txt 
+uv add -r requirements.txt --active
