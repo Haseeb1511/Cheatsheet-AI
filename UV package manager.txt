@@ -1,6 +1,11 @@
+# UV is a wrapper on top of Pip written in RUST
+
+
+pip install uv
 uv init
 uv venv
 .venv/scripts/activate
 
 uv add -r requirements.txt 
 uv add -r requirements.txt --active
+
