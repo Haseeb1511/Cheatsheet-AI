@@ -62,3 +62,10 @@ sudo ./svc.sh install
 sudo ./svc.sh start
 
 ```
+
+## Test from EC2 if container working
+
+```bash 
+curl http://localhost:5000
+
+```
