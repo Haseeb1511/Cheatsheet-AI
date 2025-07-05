@@ -1,0 +1,14 @@
+sudo apt update -y            # Update package lists
+sudo apt upgrade            # Upgrade packages
+sudo apt install <pkgname>    # Install package
+sudo apt remove <pkgname>     # Remove package
+
+
+#installation of docker(4 command)
+curl -fsSL https://get.docker.com -o get-docker.sh              #install docker 
+sudo sh get-docker.sh
+sudo usermod -aG docker ubuntu
+newgrp docker
+
+
+docker ps       #check if docker is their or not
