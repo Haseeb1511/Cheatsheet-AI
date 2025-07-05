@@ -82,4 +82,6 @@ docker push username/repo:tag
 
 ```bash
 docker run --env-file .env <image-name>
+docker run -p 5000:5000 --env-file .env vehicle
+
 ```
