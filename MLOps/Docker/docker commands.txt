@@ -68,3 +68,9 @@ docker system prune -a
 
 
 
+====================Build,tag,push=======================================
+docker build -t myimage:latest .
+docker tag myimage username/myimage:tag
+docker push username/repo:tag
+
+
