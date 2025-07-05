@@ -12,3 +12,28 @@ newgrp docker
 
 
 docker ps       #check if docker is their or not
+
+
+df -h    # to check space in ec2
+
+###clean docker from ec2:
+# Stop all containers
+docker stop $(docker ps -aq)
+
+# Remove all containers
+docker rm $(docker ps -aq)
+
+# Remove dangling images
+docker image prune -f
+
+# Remove all unused images, networks, volumes
+docker system prune -a -f --volumes
+
+
+
+
+#### make sure server is always running
+cd actions-runner
+sudo ./svc.sh install
+sudo ./svc.sh start
+
