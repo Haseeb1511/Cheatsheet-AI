@@ -1,3 +1,4 @@
+```bash
 # Build an image from Dockerfile
 docker build -t myimage:latest .
 
@@ -9,9 +10,9 @@ docker tag myimage username/myimage:tag
 
 # Remove an image
 docker rmi image_id_or_name
-
--------------------------Container-----------------
-
+```
+### Container
+```bash
 # Run a container
 docker run -d -p 5000:5000 --name mycontainer myimage
 
@@ -36,10 +37,10 @@ docker logs container_id_or_name
 # List volumes
 docker volume ls
 
+```
 
-
-
---------------------------Pushing to docker hub---------------
+### Pushing to docker hub
+```bash
 docker login
 
 # Tag image for Docker Hub
@@ -52,8 +53,9 @@ docker push username/repo:tag
 docker pull username/repo:tag
 
 
-
---------------------------Clean up
+```
+### Clean up
+```bash
 # Remove all stopped containers
 docker container prune
 
@@ -66,11 +68,18 @@ docker volume prune
 # Remove everything not in use
 docker system prune -a
 
+```
 
-
-====================Build,tag,push=======================================
+### Build-tag-push
+```bash
 docker build -t myimage:latest .
 docker tag myimage username/myimage:tag
 docker push username/repo:tag
 
+```
 
+### .Env in docker
+
+```bash
+docker run --env-file .env <image-name>
+```
