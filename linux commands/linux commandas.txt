@@ -76,7 +76,7 @@ wget https://file.url       # Download file
 # ============================================================
 
 # 📦 PACKAGE MANAGEMENT (Debian/Ubuntu)
-sudo apt update             # Update package lists
+sudo apt update -y            # Update package lists
 sudo apt upgrade            # Upgrade packages
 sudo apt install <pkgname>    # Install package
 sudo apt remove <pkgname>     # Remove package
