@@ -1,2 +1,0 @@
-docker build -t myimage:latest .
-docker run --env-file .env <image-name>
