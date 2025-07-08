@@ -94,9 +94,16 @@ docker-compose up -d  #Runs containers in the background.
 docker-compose stop   #Stop conatianer
 docker-compose down    # Stops and removes everything created by docker-compose up.
 docker-compose pull #Pull new images from registry
-
 docker-compose ps #Check status
 docker-compose restart
+
+
+# Install docker compose on AWS EC2
+sudo curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose
+sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+#Verify
+docker compose version
+
 
 
 ```
