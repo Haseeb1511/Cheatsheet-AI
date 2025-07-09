@@ -88,14 +88,15 @@ docker run -p 5000:5000 --env-file .env vehicle
 
 ### For 2 Docker files(streamlit+fastapi) docker-compose.yaml
 ```bash
-docker-compose build  # Builds all images defined in docker-compose.yml.
-docker-compose up --build #Build images and start containers
-docker-compose up -d  #Runs containers in the background.
-docker-compose stop   #Stop conatianer
-docker-compose down    # Stops and removes everything created by docker-compose up.
-docker-compose pull #Pull new images from registry
-docker-compose ps #Check status
-docker-compose restart
+docker compose build  # Builds all images defined in docker-compose.yml.
+docker compose up --build #Build images and start containers
+docker compose up -d  #Runs containers in the background.
+docker compose stop   #Stop conatianer
+docker compose down    # Stops and removes everything created by docker-compose up.
+docker compose pull #Pull new images from registry
+docker compose ps #Check status
+docker compose restart
+docker system df  #To check how much disk space your containers and images are using, run
 
 
 # Install docker compose on AWS EC2
