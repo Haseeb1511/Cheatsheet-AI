@@ -69,3 +69,19 @@ sudo ./svc.sh start
 curl http://localhost:5000
 
 ```
+
+
+## Working directory on EC2 after CI/CD pipeline
+```markdown
+When you use:
+- name: Checkout
+  uses: actions/checkout@v3
+
+Always checkout the repo to:
+<runner-root>/_work/<repo-name>/<repo-name>/
+
+Find your runner root:
+ls /home/ubuntu/actions-runner/_work/
+it look inside work folder to see if their is anything in it.and then add that path to CD just before executing docker run commands
+
+```
