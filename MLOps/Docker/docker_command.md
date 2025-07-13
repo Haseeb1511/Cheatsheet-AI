@@ -105,6 +105,19 @@ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 #Verify
 docker compose version
 
+```
 
+
+
+## How to restore deleted file
+```bash
+# 1️⃣ View the commit history that included the file
+git log -- src/component/data_ingestion.py
+
+# 2️⃣ Inspect a specific commit to find the exact path
+git ls-tree -r --name-only <commit-hash>
+
+# 3️⃣ Restore the file from that commit
+git checkout <commit-hash> -- src/component/data_ingestion.py
 
 ```

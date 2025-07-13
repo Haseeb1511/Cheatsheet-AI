@@ -85,3 +85,12 @@ ls /home/ubuntu/actions-runner/_work/
 it look inside work folder to see if their is anything in it.and then add that path to CD just before executing docker run commands
 
 ```
+
+## TO check if container is working or not
+```bash
+docker ps -a  #see all container and their status
+docker logs fastapi_service  #check logs for fast api container
+docker start -ai fastapi_service #rerun the container
+
+
+```
