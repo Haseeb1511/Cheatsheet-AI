@@ -121,3 +121,25 @@ git ls-tree -r --name-only <commit-hash>
 git checkout <commit-hash> -- src/component/data_ingestion.py
 
 ```
+
+## How to switch back to previous commit
+```bash
+# ✅ Method 1: Temporary rollback (safe)
+# This switches to a previous commit without changing branch history.
+git switch --detach <commit-hash>
+
+# If you want to keep working from this state,
+# create a new branch pointing to this commit:
+git checkout -b my-rollback-branch
+
+# ------------------------------------------------------
+
+# ✅ Method 2: Permanent reset (rewrites history!)
+# This resets your current branch pointer to an old commit,
+# discards any newer commits, and updates the remote.
+git reset --hard <commit-hash>
+
+# Force push is required because you’re rewriting branch history.
+git push origin main --force
+
+```
