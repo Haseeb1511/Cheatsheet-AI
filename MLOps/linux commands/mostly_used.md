@@ -32,6 +32,8 @@ docker ps    # Check if Docker is running
 
 df -h    # Check available disk space
 
+lsblk # list blockstorage
+
 ```
 
 ## 🧹 Clean Docker From EC2
@@ -82,8 +84,7 @@ Always checkout the repo to:
 
 Find your runner root:
 ls /home/ubuntu/actions-runner/_work/
-it look inside work folder to see if their is anything in it.and then add that path to CD just before executing docker run commands
-
+it look inside work folder to see if their is anything in it.and then add that path to CD(continious-deployment) just before executing docker run commands
 ```
 
 ## TO check if container is working or not
@@ -92,5 +93,25 @@ docker ps -a  #see all container and their status
 docker logs fastapi_service  #check logs for fast api container
 docker start -ai fastapi_service #rerun the container
 
+```
+
+## Mostly Used Linux Commands
+```bash
+cd <directory>  #Change directory 
+mkdir <new_folder>   #Make a new directory
+pwd  #Print working directory
+
+ls        #  list files
+ls -l     # detailed list
+ls -a     # show hidden files
+
+touch filename.txt  #Create an empty file
+cat filename.txt  #View file contents
+rm <filename.txt>  # Remove a file
+rm -r <directory_name>  #Remove a directory and its contents
+
+# Move or rename files and directories
+mv <old_name> <new_name>
+mv <file.txt> </path/to/destination/>
 
 ```
