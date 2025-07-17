@@ -98,6 +98,7 @@ docker compose ps #Check status
 docker compose restart
 docker system df  #To check how much disk space your containers and images are using, run
 
+docker compose down --volumes --rmi all   #remove every docker compose conter completely
 
 # Install docker compose on AWS EC2
 sudo curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -o /usr/local/lib/docker/cli-plugins/docker-compose
@@ -106,7 +107,18 @@ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 docker compose version
 
 ```
+## Docker-compose test in Local
+```bash
+docker compose up
+docker compose up -d  #run in background
+http://localhost:8501  # to test
 
+docker compose down #after testing close the container just close container not remove
+docker compose down --volumes --rmi all
+ #remove container space and image also
+
+
+```
 
 
 ## How to restore deleted file
