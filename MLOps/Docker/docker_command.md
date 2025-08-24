@@ -111,7 +111,12 @@ docker compose version
 ```bash
 docker compose up
 docker compose up -d  #run in background
-http://localhost:8501  # to test
+
+docker compose up <fastapi>  #run specific container
+docker compose logs <fastapi_service> #to check any issue in any container
+
+http://localhost:8501  # to test streamlit
+http://localhost:8000   # to test fast api
 
 docker compose down #after testing close the container just close container not remove
 docker compose down --volumes --rmi all
